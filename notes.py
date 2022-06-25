@@ -110,10 +110,10 @@ print(float("30"))   #* The output is 30.0
 
 from math import * 
 
-""" floor --> return the smallest number """
+""" floor --> round the number to the smallest number """
 print(floor(3.7))  #* The output is 3
 
-""" ceil --> return the largest number """
+""" ceil --> round the number to the largest number """
 print(ceil(3.2))  #* The output is 4
 
 """ square root  """
