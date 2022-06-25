@@ -30,10 +30,16 @@ print("I changed my name to " + name)
 is_Female = True
 """ Boolean input --> True or False """
 
+""" _______________________________ """
+""" Print Space """
+
 """ to print new line use \n """
 """ to print " use \" """
 """ to print ' use \' """
 """ to print tab use \t """
+
+""" _______________________________ """
+""" Strings """
 
 """ to print the words using lower case use { name_variable.lower() } """
 print(name.lower())
@@ -59,5 +65,49 @@ print(name.index("al"))
 
 """ to replace some letters use { name_variable.replace("value_to_change","new_value") } """
 print(name.replace("al","ro"))
+
+""" _______________________________ """
+""" Numbers """
+
+""" to convert the number to string use { str(number) } --> Because you can't print number with string!!"""
+print("I'm " + str(24) + " years old.")
+
+""" to take tha absolute value use { abs(number) } """
+print(abs(-100.2))
+
+""" power use { pow(a,b) } --> a^b """
+print(pow(2,3))
+
+""" to return the minimum value use { min(a,b,...)} """
+print(min(2,5,3))
+
+""" to return the maximum value use { max(a,b,...)} """
+print(max(2,5,3))
+
+""" round the number to the nearest whole number"""
+print(round(3.43))
+print(round(-3.76))
+
+""" _______________________________ """
+""" Use Library """
+
+from math import * 
+
+""" floor --> return the smallest number """
+print(floor(3.7))
+
+""" ceil --> return the largest number """
+print(ceil(3.2))
+
+""" square root  """
+print(sqrt(16))
+
+""" _______________________________ """
+""" Input """
+
+""" Take input from user use { input() } --> input type is string"""
+user_name = input("Enter your name: ")
+user_age = input("Enter your age: ")
+print("Hi " + user_name + "!! Your age is " + user_age)
 
 """ _______________________________ """
