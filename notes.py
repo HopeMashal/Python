@@ -232,7 +232,7 @@ def print_name(name):
 
 print_name("Hope!!!")   #* The output is Hello Hope!!!
 
-""" Function cube """
+""" Cube Function """
 def cube(num):
   return pow(num,3)
 
@@ -240,6 +240,25 @@ print(cube(3))  #* The output is 27.0
 
 """ _______________________________ """
 #!""" Conditionals """
+
+""" If statement """
+a=10
+if a>0:
+  print("a is Positive Number")
+
+b=5
+c=3
+if a>b and b>c:
+  print("a is the largest number")
+elif a<b or b<c:
+  print("b or c is the largest number")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("Else Value")
+
+""" _______________________________ """
+#!""" Comparisons """
 
 
 """ _______________________________ """
