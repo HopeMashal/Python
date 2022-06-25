@@ -257,6 +257,10 @@ elif a == b:
 else:
   print("Else Value")
 
+is_male = False
+if not is_male:
+  print("FEMALE!!")
+
 """ _______________________________ """
 #!""" Comparisons """
 
