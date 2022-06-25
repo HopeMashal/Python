@@ -117,3 +117,24 @@ user_age = input("Enter your age: ")
 print("Hi " + user_name + "!! Your age is " + user_age)
 
 """ _______________________________ """
+""" Lists (Array) """
+
+""" You can put string, number, and array inside the array """
+my_list = ["Hope" , 24 , ["Drawing","Swimming"]]
+print("Hi There! \nMy name is " + my_list[0] + ". I'm " + str(my_list[1]) + " years old. My hobbies are " + my_list[2][0] + " and " + my_list[2][1] + ".")
+
+my_data = ["HTML" , "CSS" , "JAVASCRIPT" , "REACT" , "NODE"]
+
+print(my_data[1:3])
+""" The output is --> ['CSS', 'JAVASCRIPT'] => take the values from my_data[1] to my_data[3-1] = my_data[2]  """
+
+print(my_data[1:])
+""" The output is --> ['CSS', 'JAVASCRIPT', 'REACT', 'NODE'] => take the values from my_data[1] to last item  """
+
+print(my_data[-1])
+""" The output is --> NODE """
+
+""" You can change the value of any items in the array """
+my_data[0] = "HTML3"
+
+""" _______________________________ """
