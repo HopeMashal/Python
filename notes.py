@@ -91,7 +91,7 @@ print(round(-3.76))
 """ to convert the string to integer number use { int(string) } """
 print(int("30"))
 
-""" to convert the string to float number use { int(string) } """
+""" to convert the string to float number use { float(string) } """
 print(float("30"))
 
 """ _______________________________ """
