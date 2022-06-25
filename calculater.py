@@ -30,16 +30,20 @@ def switch(operationResult):
     return switcher.get(operationResult, default)()
 
 op_select = ""
-if int(operation) == 1 :
+op_value = int(operation)
+if op_value == 1 :
   op_select="+"
-if int(operation) == 2 :
+if op_value == 2 :
   op_select="-"
-if int(operation) == 3 :
+if op_value == 3 :
   op_select="/"
-if int(operation) == 4 :
+if op_value == 4 :
   op_select="*"
-if int(operation) == 5 :
+if op_value == 5 :
   op_select="%"
 
-print("The equation is :",Number_1,op_select,Number_2)
-print("The result is: ", switch(int(operation)))
+if op_value <= 5 and op_value >= 1 :
+  print("The equation is:",Number_1,op_select,Number_2)
+  print("The result is:",switch(op_value))
+else:
+  print(switch(op_value))
