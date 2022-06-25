@@ -1,4 +1,5 @@
 """ To print something in terminal you can use { print("...") } """
+
 print("Hi Hope, please draw triangle")
 
 print("     /|")
@@ -8,8 +9,23 @@ print("  /   |")
 print(" /    |")
 print("/_____|")
 
+
 """ Variables """
-name = "Hope"
+
+name = "Hope"  
+""" You can change variable value, name="..." the variable value is string """  
+
 age = "25"
+year = 1997
+""" year=# the variable value is integer (number) """
+
+average = 81.8
+""" average=# the variable value is float (number) """
+
 print("Hi there!")
 print("My name is " + name +". I'm " + age + " years old.")
+name = "Amal" 
+print("I changed my name to " + name)
+
+is_Female = True
+""" Boolean input --> True or False """
