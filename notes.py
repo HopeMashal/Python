@@ -88,6 +88,12 @@ print(max(2,5,3))
 print(round(3.43))
 print(round(-3.76))
 
+""" to convert the string to integer number use { int(string) } """
+print(int("30"))
+
+""" to convert the string to float number use { int(string) } """
+print(float("30"))
+
 """ _______________________________ """
 """ Use Library """
 
