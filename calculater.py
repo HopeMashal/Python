@@ -3,8 +3,15 @@
 
 Number_1 = input("Enter the first number: ")
 Number_2 = input("Enter the second number: ")
-print("Enter 1 for sum (+) \t Enter 2 for sub (-) \t Enter 3 for div (/) \t Enter 4 for mult (*) \t Enter 5 for remainder of the div (%)")
-operator = input("Enter the operator: ")
+print("\n ____________________________________")
+print("|  Please enter the operator number  |")
+print("|        Enter 1 for sum (+)         |")
+print("|        Enter 2 for sub (-)         |")
+print("|        Enter 3 for div (/)         |")
+print("|        Enter 4 for mul (*)         |")
+print("|        Enter 5 for rod (%)         |")
+print("|____________________________________|\n")
+operator = input("Enter the operator number: ")
 
 """ Def. the functions """
 
