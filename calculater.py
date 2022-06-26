@@ -1,10 +1,10 @@
 """ In this app, I used switch and if/else statement """
-""" Ask the user to enter the numbers and the operation """
+""" Ask the user to enter the numbers and the operator """
 
 Number_1 = input("Enter the first number: ")
 Number_2 = input("Enter the second number: ")
 print("Enter 1 for sum (+) \t Enter 2 for sub (-) \t Enter 3 for div (/) \t Enter 4 for mult (*) \t Enter 5 for remainder of the div (%)")
-operation = input("Enter the operation: ")
+operator = input("Enter the operator: ")
 
 """ Def. the functions """
 
@@ -19,7 +19,7 @@ def mult_op():
 def res_op():
     return float(Number_1)%float(Number_2)
 def default():
-    return "Incorrect operation, please enter (1 -> + , 2 -> - , 3 -> / , 4 -> * , 5 -> %)"
+    return "Incorrect operator, please enter (1 -> + , 2 -> - , 3 -> / , 4 -> * , 5 -> %)"
 
 """ Def. the switch value """
 
@@ -33,13 +33,13 @@ switcher = {
 
 """ Return the result of the switch """ 
 
-def switch(operationResult):
-    return switcher.get(operationResult, default)()
+def switch(operatorResult):
+    return switcher.get(operatorResult, default)()
 
 """ Print the equation and the result """ 
 
 op_select = ""
-op_value = int(operation)
+op_value = int(operator)
 if op_value == 1 :
   op_select="+"
 if op_value == 2 :
