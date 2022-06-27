@@ -28,6 +28,4 @@ list_of_phrases = ["This is a first line","\nThis is a second line","\nThis is a
 phrases_file.writelines(list_of_phrases) 
 phrases_file.close()
 
-
-
 """ _______________________________ """

@@ -20,6 +20,7 @@ Python Basic Notes and Some Apps
   * Errors [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Errors.py)
   * Reading Files [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Reading_Files.py)
   * Writing Files [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Writing_Files.py)
+  * Modules [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Modules.py)
 
 ## Apps
   * Calculator 
