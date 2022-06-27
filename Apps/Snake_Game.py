@@ -22,15 +22,16 @@ snake = [  #? The snake's coordinates
 food = [sh//2, sw//2] #? Initial location of the food in (y-axis , x-axis)
 w.addch(food[0], food[1], curses.ACS_PI)  #? Paint food at (sh//2, sw//2) with attributes (Shape -> PI)
 
-key = curses.KEY_RIGHT  #? Initial direction of the snake's movement
+key = curses.KEY_RIGHT  #? Initial direction of the snake's movement (Right)
 
-while True:
-    next_key = w.getch()
-    key = key if next_key == -1 else next_key
+while True:  #? Infinite Loop (Stop when you are lose)
+    next_key = w.getch()  #? When user click new bottom in the keyboard (up,down,right,left) --> New direction of the snake's movement
+    key = key if next_key == -1 else next_key #? If user didn't click any bottom --> key value hasn't changed, BUT if user click any bottom --> change the direction to next_key value
 
     if snake[0][0] in [0, sh] or snake[0][1] in [0, sw] or snake[0] in snake[1: ]:
         curses.endwin()
         quit()
+      #? Check if the snake hits the edge (border) of the window or itself --> GAME OVER
       
 
     new_head = [snake[0][0], snake[0][1]]
