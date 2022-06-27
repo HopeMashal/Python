@@ -128,6 +128,6 @@ def POWER(base_num,pow_num):
   for index in range(pow_num):
     result = result * base_num
   return result
-print(POWER(2,5))
+print(POWER(2,5))  #* The output is 32
 
 """ _______________________________ """

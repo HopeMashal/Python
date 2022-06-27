@@ -16,6 +16,8 @@ Python Basic Notes and Some Apps
   * Conditionals [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Conditionals.py)
   * While Loop [GO](https://github.com/HopeMashal/Python/blob/master/Notes/While_Loop.py)
   * For Loop [GO](https://github.com/HopeMashal/Python/blob/master/Notes/For_Loop.py)
+  * Nested Loop [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Nested_Loop.py)
+  * Errors [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Errors.py)
 
 ## Apps
   * Calculator 

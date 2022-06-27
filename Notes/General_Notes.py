@@ -7,6 +7,13 @@ And { """    """ } for multiline comments """
 multiline comments
 """
 
+# Using Better Comments for
+# * --> Important information us highlighted
+# ! --> Deprecated method, do not use
+# ? --> Question
+# TODO --> Test case
+# // --> Unimportant or Wrong note
+
 """ _______________________________ """
 #!""" Print (new line/tab/'/") """
 
