@@ -27,3 +27,4 @@ Python Basic Notes and Some Apps
   * Calculator 
     * Use If/elif/else statements [GO](https://github.com/HopeMashal/Python/blob/master/Apps/easy_calculator.py)
     * Use switch and if/else statements [GO](https://github.com/HopeMashal/Python/blob/master/Apps/calculator.py)
+  * Snake [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Snake_Game.py)
