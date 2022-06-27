@@ -12,6 +12,9 @@ position at start     | +  +   +  +
 position at end       |               +  +
                       |
 """
+# TRUNCATE -> Make the file empty
+# CREATE -> Create new file if the file name doesn't exist
+
 workers_file=open("Workers.txt","r")
 for worker in workers_file.readlines():
   print(worker)

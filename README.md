@@ -18,6 +18,8 @@ Python Basic Notes and Some Apps
   * For Loop [GO](https://github.com/HopeMashal/Python/blob/master/Notes/For_Loop.py)
   * Nested Loop [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Nested_Loop.py)
   * Errors [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Errors.py)
+  * Reading Files [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Reading_Files.py)
+  * Writing Files [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Writing_Files.py)
 
 ## Apps
   * Calculator 
