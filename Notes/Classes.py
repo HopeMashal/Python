@@ -34,7 +34,30 @@ employee2.bonus()
 
 #* Class Inheritance (الوراثة)
 
+from Doctor import Doctor
+from Family_Doctor import FamilyDoctor
 
+doctor1 = Doctor()
+
+doctor1.studied_years()
+doctor1.works_where()
+doctor1.paid_by_who()
+""" #* The output is
+      I studied for 7 years
+      I work in a hospital
+      I get paid by the government
+"""
+
+doctor2 = FamilyDoctor()
+
+doctor2.studied_years()
+doctor2.works_where()
+doctor2.paid_by_who()
+""" #* The output is
+      I studied for 7 years
+      I work with families
+      I get paid by the people
+"""
 
 
 """ _______________________________ """
