@@ -428,6 +428,7 @@ for y in range(7,11):
       10
 """
 
+""" print the index number then print the value """
 new_list = ["Hope","Amal","Akira","Yuki"]
 for index in range(len(new_list)):
   print(index)
@@ -465,6 +466,7 @@ for n in range(10):
       9  is an odd number
 """
 
+""" Check if this value equal "Winner" when it match finish the loop """
 my_arr = ["False","True","Winner","Lost"]
 for value in range(len(my_arr)):
   if my_arr[value] == "Winner":
@@ -478,6 +480,7 @@ for value in range(len(my_arr)):
       2  is the Winner
 """
 
+""" Check if "Akira" is your friend --> (found in array) """
 for val in new_list:
   if val == "Akira":
     print(val," is your friend! :)")
@@ -487,6 +490,7 @@ else: print("NOT FOUND")
       Akira  is your friend! :)
 """
 
+""" All number between 3 to 9 are chosen number except 5 (Because we have continue when x=5) """
 for x in range(3,10):
   if x == 5:
     continue
