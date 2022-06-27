@@ -122,4 +122,12 @@ for x in range(3,10):
       9  is the chosen number
 """
 
+""" Power Function """
+def POWER(base_num,pow_num):
+  result = 1
+  for index in range(pow_num):
+    result = result * base_num
+  return result
+print(POWER(2,5))
+
 """ _______________________________ """

@@ -20,4 +20,9 @@ def cube(num):
 
 print(cube(3))  #* The output is 27.0
 
+""" Power Function """
+def power(base_num,pow_num):
+  return pow(base_num,pow_num)
+print(power(3,4))
+
 """ _______________________________ """
