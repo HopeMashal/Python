@@ -8,7 +8,7 @@ multiline comments
 """
 
 """ _______________________________ """
-#!""" Print (line/tab/'/") """
+#!""" Print (new line/tab/'/") """
 
 """ to print new line use \n """
 """ to print " use \" """
