@@ -29,3 +29,4 @@ Python Basic Notes and Some Apps
     * Use switch and if/elif/else statements [GO](https://github.com/HopeMashal/Python/blob/master/Apps/calculator.py)
   * Snake Game [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Snake_Game.py)
   * Guessing Game [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Guessing_Game.py)
+  * Hangman Game [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Hangman_Game.py)
