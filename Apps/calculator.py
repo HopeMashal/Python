@@ -1,4 +1,4 @@
-""" In this app, I used switch and if/else statement """
+""" In this app, I used switch and if/elif/else statement """
 """ Ask the user to enter the numbers and the operator """
 
 Number_1 = input("Enter the first number: ")
@@ -10,6 +10,7 @@ print("|        Enter 2 for sub (-)         |")
 print("|        Enter 3 for div (/)         |")
 print("|        Enter 4 for mul (*)         |")
 print("|        Enter 5 for rod (%)         |")
+print("|        Enter 6 for pow (^)         |")
 print("|____________________________________|\n")
 operator = input("Enter the operator number: ")
 
@@ -25,8 +26,10 @@ def mult_op():
     return float(Number_1)*float(Number_2)
 def res_op():
     return float(Number_1)%float(Number_2)
+def pow_op():
+    return pow(float(Number_1),float(Number_2))
 def default():
-    return "Incorrect operator, please enter (1 -> + , 2 -> - , 3 -> / , 4 -> * , 5 -> %)"
+    return "Incorrect operator, please enter (1 -> + , 2 -> - , 3 -> / , 4 -> * , 5 -> % , 6 -> ^)"
 
 """ Def. the switch value """
 
@@ -36,6 +39,7 @@ switcher = {
     3: div_op,
     4: mult_op,
     5: res_op,
+    6: pow_op,
     }
 
 """ Return the result of the switch """ 
@@ -49,16 +53,18 @@ op_select = ""
 op_value = int(operator)
 if op_value == 1 :
   op_select="+"
-if op_value == 2 :
+elif op_value == 2 :
   op_select="-"
-if op_value == 3 :
+elif op_value == 3 :
   op_select="/"
-if op_value == 4 :
+elif op_value == 4 :
   op_select="*"
-if op_value == 5 :
+elif op_value == 5 :
   op_select="%"
+elif op_value == 6 :
+  op_select="^"
 
-if op_value <= 5 and op_value >= 1 :
+if op_value <= 6 and op_value >= 1 :
   print("The equation is:",Number_1,op_select,Number_2)
   print("The result is:",switch(op_value))
 else:

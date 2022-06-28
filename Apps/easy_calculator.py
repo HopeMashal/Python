@@ -23,6 +23,9 @@ elif operator == "*":
 elif operator == "%":
     print("The equation is:",Number_1,operator,Number_2)
     print("The result is:",float(Number_1)%float(Number_2))
+elif operator == "^":
+    print("The equation is:",Number_1,operator,Number_2)
+    print("The result is:",pow(float(Number_1),float(Number_2)))
 else:
-    print("PLEASE ENTER (+,-,*,/,%) !!!")
+    print("PLEASE ENTER (+,-,*,/,%,^) !!!")
 
