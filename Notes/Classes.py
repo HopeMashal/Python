@@ -4,6 +4,7 @@
 #* Classes & Objects
 
 from Employee import Employee  #? from file_name import class_name
+# SEE { https://github.com/HopeMashal/Python/blob/master/Notes/Employee.py }
 
 employee1 = Employee("Hope",24,"Meta", False, 3.5, 1000)
 employee2 = Employee("Yuki",60,"Whatsapp", True, 5, 1500)
@@ -34,8 +35,8 @@ employee2.bonus()
 
 #* Class Inheritance (الوراثة)
 
-from Doctor import Doctor
-from Family_Doctor import FamilyDoctor
+from Doctor import Doctor # SEE { https://github.com/HopeMashal/Python/blob/master/Notes/Doctor.py }
+from Family_Doctor import FamilyDoctor  # SEE { https://github.com/HopeMashal/Python/blob/master/Notes/Family_Doctor.py }
 
 doctor1 = Doctor()
 

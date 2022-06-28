@@ -9,7 +9,7 @@
 
 # Run this command in terminal { pip install python-docx }
 
-import Useful_Function
+import Useful_Function  # SEE { https://github.com/HopeMashal/Python/blob/master/Notes/Useful_Function.py }
 
 import docx  # Use this link for more information about this packages { https://python-docx.readthedocs.io/en/latest/ }
 
