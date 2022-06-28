@@ -25,16 +25,16 @@ w.addch(food[0], food[1], curses.ACS_PI)  #? Paint food at (sh//2, sw//2) with a
 key = curses.KEY_RIGHT  #? Initial direction of the snake's movement (Right)
 
 while True:  #? Infinite Loop (Stop when you are lose)
-    next_key = w.getch()  #? When user click new bottom in the keyboard (up,down,right,left) --> New direction of the snake's movement
-    key = key if next_key == -1 else next_key #? If user didn't click any bottom --> key value hasn't changed, BUT if user click any bottom --> change the direction to next_key value
+    next_key = w.getch()  #? When user click new button in the keyboard (up,down,right,left) --> New direction of the snake's movement
+    key = key if next_key == -1 else next_key #? If user didn't click any button --> key value hasn't changed, BUT if user click any button --> change the direction to next_key value
 
     if snake[0][0] in [0, sh] or snake[0][1] in [0, sw] or snake[0] in snake[1: ]:
         curses.endwin()
         quit()
-      #? Check if the snake hits the edge (border) of the window or itself --> GAME OVER
+      #? Check if the snake hits the edge (border) of the window or itself --> GAME OVER (Close the window)
       
 
-    new_head = [snake[0][0], snake[0][1]]
+    new_head = [snake[0][0], snake[0][1]]   #? The coordinates of the head (snake's head)
 
     if key == curses.KEY_DOWN:
         new_head[0] += 1
@@ -44,20 +44,21 @@ while True:  #? Infinite Loop (Stop when you are lose)
         new_head[1] += 1
     if key == curses.KEY_LEFT:
         new_head[1] -= 1
+        #? The new location (coordinates) of the snake's head when the user click any button
 
-    snake.insert(0, new_head)
+    snake.insert(0, new_head)  #? Change the value of snake's head to (new head)
 
-    if snake[0] == food:
-        food = None
-        while food is None:
-            nf = [
+    if snake[0] == food: #? If snake eat the food (the snake's head and the food in the same coordinates)
+        food = None  #? No food
+        while food is None: #? If No food run this loop
+            nf = [  #? New Food Array (coordinate (y,x)) 
                 random.randint(1, sh-1),
                 random.randint(1, sw-1)
             ]
-            food = nf if nf not in snake else None
-        w.addch(food[0], food[1], curses.ACS_PI)
+            food = nf if nf not in snake else None  #? If new food doesn't hit with snake's body --> food = new food, ELSE food = None
+        w.addch(food[0], food[1], curses.ACS_PI)   #? ADD the food to the screen
     else:
-        tail = snake.pop()
-        w.addch(tail[0], tail[1], ' ')
+        tail = snake.pop()  #? If snake doesn't eat the food, delete the tail
+        w.addch(tail[0], tail[1], ' ')  #? tail value is equal space
 
-    w.addch(snake[0][0], snake[0][1], curses.ACS_CKBOARD)
+    w.addch(snake[0][0], snake[0][1], curses.ACS_CKBOARD)  #? The snake's shape
