@@ -31,3 +31,4 @@ Python Basic Notes and Some Apps
   * Guessing Game [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Guessing_Game.py)
   * Hangman Game [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Hangman_Game.py)
   * Translator [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Translator.py)
+  * Strong Password Generator [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Strong_Password_Generator.py)
