@@ -95,6 +95,7 @@ exported = zip_longest(*file_list)  #* (*->UNPACKING)
     zip_longest(*z) => result { [1,"a"][2,"b"][3,"c"] }
 """
 
+# SEE { https://github.com/HopeMashal/Python/blob/master/jobstest.csv }
 with open("jobstest.csv","w") as myfile:
   wr = csv.writer(myfile)
   wr.writerow(["Job Title","Company Name","Date","Location","Skills","Job Link","Salary","Job Requirements"])
