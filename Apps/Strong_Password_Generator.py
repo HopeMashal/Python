@@ -33,3 +33,21 @@ random.shuffle(s2)
 random.shuffle(s3)
 random.shuffle(s4)
 
+part_30 = round(characters_number * (30/100))
+part_20 = round(characters_number * (20/100))
+
+password = []
+
+for i in range(part_30):
+  password.append(s1[i])
+  password.append(s2[i])
+
+for i in range(part_20):
+  password.append(s3[i])
+  password.append(s4[i])
+
+random.shuffle(password)
+
+password = "".join(password[0:])
+
+print("Your password is:  ",password)
