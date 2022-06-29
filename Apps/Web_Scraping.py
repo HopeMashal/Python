@@ -39,9 +39,27 @@ for i in range(len(job_titles)):
   skills.append(job_skills[i].text)
 
 # 7th step create csv file and fill it with values
+file_list = [job_title,company_name,location_name,skills]
+exported = zip_longest(*file_list)  #* (*->UNPACKING)
+""" 
+  Ex :
+    x=[1,2,3]
+    y=["a","b","c"]
+    z = [x,y]
+    zip_longest(*z) => result { [1,"a"][2,"b"][3,"c"] }
+"""
 
-
+with open("jobstest.csv","w") as myfile:
+  wr = csv.writer(myfile)
+  wr.writerow(["Job Title","Company Name","Location","Skills"])
+  wr.writerows(exported)
 
 # 8th step to fetch the link of the job and fetch in page details
 # Salary, job requirements
+
+
+# 9th step is to do the above for all pages
+
+
+# 10th step is to optimize code and clean data
 
