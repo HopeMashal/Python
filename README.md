@@ -30,3 +30,4 @@ Python Basic Notes and Some Apps
   * Snake Game [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Snake_Game.py)
   * Guessing Game [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Guessing_Game.py)
   * Hangman Game [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Hangman_Game.py)
+  * Translator [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Translator.py)
