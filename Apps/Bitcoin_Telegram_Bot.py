@@ -25,3 +25,15 @@ def get_price():
   btc_price = response['data'][0]['quote']['USD']['price']
   return btc_price
 
+def send_update(chat_id, msg):
+  url = f"https://api.telegram.org/bot{bot_key}/sendMessage?chat_id={chat_id}&text={msg}"
+  requests.get(url)
+
+def main():
+  while True:
+    price = get_price()
+    if price < limit:
+      send_update(chat_id, f"The bitcoin price is equal {price}")
+    time.sleep(time_interval)
+
+main()
