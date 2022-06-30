@@ -34,4 +34,4 @@ Python Basic Notes and Some Apps
   * Strong Password Generator [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Strong_Password_Generator.py)
   * Bitcoin Telegram Bot [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Bitcoin_Telegram_Bot.py)
   * Web Scraping [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Web_Scraping.py)
-  * Pong Game [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Pong_Game.py)
+  * Ping Pong Game [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Pong_Game.py)
