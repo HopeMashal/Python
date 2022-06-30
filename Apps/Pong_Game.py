@@ -32,6 +32,33 @@ ball.color("white")
 ball.penup()
 ball.goto(0,0)
 
+#Functions
+def madrab_1_up():
+  y = madrab_1.ycor() #get the y coordinate of the madrab #1
+  y += 20  
+  madrab_1.sety(y) #set the y of the madrab #1 to the new y coordinate
+def madrab_1_down():
+  y = madrab_1.ycor()
+  y -= 20
+  madrab_1.sety(y)
+
+def madrab_2_up():
+  y = madrab_2.ycor()
+  y += 20
+  madrab_2.sety(y)
+def madrab_2_down():
+  y = madrab_2.ycor()
+  y -= 20
+  madrab_2.sety(y)
+
+#keyboard bindings
+wind.listen()  #tell the window to expect keyboard input
+wind.onkeypress(madrab_1_up, "w")  # when pressing w the function madrab_1_up is invoked
+wind.onkeypress(madrab_1_down, "s")
+
+wind.onkeypress(madrab_2_up, "Up")
+wind.onkeypress(madrab_2_down, "Down")
+
 #main game loop
 while True:
   wind.update()  #update the screen every time the loop run
