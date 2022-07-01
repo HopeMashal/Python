@@ -86,5 +86,14 @@ while True:
     ball.goto(0,0)
     ball.dx *= -1
 
+  #Tasadom madrab and ball (Ball hitting the racket/madrab)
+  if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < madrab_2.ycor()+40 and ball.ycor() > madrab_2.ycor()-40):
+    ball.setx(340)
+    ball.dx *= -1
+
+  if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < madrab_1.ycor()+40 and ball.ycor() > madrab_1.ycor()-40):
+    ball.setx(-340)
+    ball.dx *= -1
+
 
 
