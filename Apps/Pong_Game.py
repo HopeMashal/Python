@@ -66,17 +66,25 @@ while True:
   wind.update()  #update the screen every time the loop run
 
   #move the ball
-  ball.setx(ball.xcor() + ball.dx)
+  ball.setx(ball.xcor() + ball.dx) #ball starts at 0 and every time loops run ->+1 x-axis
   ball.sety(ball.ycor() + ball.dy)
 
-  #border check
-  if ball.ycor() > 290:
-    ball.sety(290)
-    ball.dy *= -1
+  #border check, top border +300px, bottom border -300px, ball is 20px
+  if ball.ycor() > 290: #if ball is at top border
+    ball.sety(290) #set y coordinate +290
+    ball.dy *= -1 #reverse direction, making +1 -> -1
 
-  if ball.ycor() < -290:
+  if ball.ycor() < -290:  #if ball is at bottom border
     ball.sety(-290)
     ball.dy *= -1
+
+  if ball.xcor() > 390:  #if ball is at right border
+    ball.goto(0,0) #return ball to center
+    ball.dx *= -1 #reverse the x direction 
+
+  if ball.xcor() < -390:  #if ball is at left border
+    ball.goto(0,0)
+    ball.dx *= -1
 
 
 
