@@ -34,6 +34,17 @@ ball.goto(0,0)
 ball.dx = 1 #Change in x-axis value 
 ball.dy = 1
 
+#score
+score1=0
+score2=0
+score = turtle.Turtle()
+score.speed(0)
+score.color("white")
+score.penup()
+score.hideturtle()
+score.goto(0,260)
+score.write("Player 1: 0, Player 2: 0", align="center", font=("Courier",24,"normal"))
+
 #Functions
 def madrab_1_up():
   y = madrab_1.ycor() #get the y coordinate of the madrab #1
@@ -81,10 +92,16 @@ while True:
   if ball.xcor() > 390:  #if ball is at right border
     ball.goto(0,0) #return ball to center
     ball.dx *= -1 #reverse the x direction 
+    score1 += 1
+    score.clear()
+    score.write("Player 1: {}, Player 2: {}".format(score1,score2), align="center", font=("Courier",24,"normal"))
 
   if ball.xcor() < -390:  #if ball is at left border
     ball.goto(0,0)
     ball.dx *= -1
+    score2 += 1
+    score.clear()
+    score.write("Player 1: {}, Player 2: {}".format(score1,score2), align="center", font=("Courier",24,"normal"))
 
   #Tasadom madrab and ball (Ball hitting the racket/madrab)
   if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < madrab_2.ycor()+40 and ball.ycor() > madrab_2.ycor()-40):
