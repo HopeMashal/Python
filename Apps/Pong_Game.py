@@ -31,6 +31,8 @@ ball.shape("circle")
 ball.color("white")
 ball.penup()
 ball.goto(0,0)
+ball.dx = 1 #Change in x-axis value 
+ball.dy = 1
 
 #Functions
 def madrab_1_up():
@@ -62,4 +64,19 @@ wind.onkeypress(madrab_2_down, "Down")
 #main game loop
 while True:
   wind.update()  #update the screen every time the loop run
+
+  #move the ball
+  ball.setx(ball.xcor() + ball.dx)
+  ball.sety(ball.ycor() + ball.dy)
+
+  #border check
+  if ball.ycor() > 290:
+    ball.sety(290)
+    ball.dy *= -1
+
+  if ball.ycor() < -290:
+    ball.sety(-290)
+    ball.dy *= -1
+
+
 
