@@ -33,6 +33,7 @@
 #* من كبسولة
 #* بنحط الداتا والفانكشن مع بعض داخل كلاس معين، عند ادخل مدخل بخرج مخرج من دون معرفة التفاصيل بالتحويل من مدخل الى مخرج
 #* class contains --> data members + methods (behavior)
+#* input --> Black Box (I can't know the details like code .. etc) --> output
 
 #? Why we need it?
 #* 
