@@ -34,6 +34,9 @@
 #* بنحط الداتا والفانكشن مع بعض داخل كلاس معين، عند ادخل مدخل بخرج مخرج من دون معرفة التفاصيل بالتحويل من مدخل الى مخرج
 #* class contains --> data members + methods (behavior)
 #* input --> Black Box (I can't know the details like code .. etc) --> output
+#* Setters & Getters Methods/Functions:-
+#* Setters --> بتعامل مع تغير المتغيرات يلي جوا الكلاس (بقدر أغير قيمة المتغيرات)
+#* Getters --> بقدر اشوف قيمة المتغيرات من دون ما اغير فيها
 
 #? Why we need it?
 #* 
