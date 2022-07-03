@@ -47,7 +47,27 @@
 """ _______________________________ """
 
 #! 2- Polymorphism
-
+#* متعدد الاشكال: قدرة الاوبجيكت على التصرف بعدة اشكال
+#* Method overriding:-
+#* الابن عنده نفس الميثود الموجود عند الاب، ولكن يلي بحصل جوا الميثود مختلف 
+"""
+  Example:
+    Class Animal: {makeSound()-->"Sound"}
+    Class Cat: {makeSound()-->"Meow"}
+    Class Dog: {makeSound()-->"Hae Haw"}
+"""
+#* Method overloading:-
+#* وجود نفس الفانكشن في نفس الكلاس وبنفس الاسم ولكن كل  فانكشين بياخد معطيات مختلفة و بأنواع مختلفة
+#* فائدته بسهل العملية على نفسي، حتى ما اسمي الفانكشينز كل واحد باسم وبعدها احاول اتذكر الاسامي لان العملية  نفسها ولكن المعطيات مختلفة لهيك بنسميهم كلهم بنفس الاسم حسب العملية وبنغير بالمعطيات
+"""
+  Example:
+    Sum (int x, int y):
+      return x+y
+    Sum (int x, int y, int z):
+      return x+y+z
+    Sum (float x, float y):
+      retun x+y
+"""
 
 """ _______________________________ """
 
@@ -73,9 +93,8 @@
     ==> Solution:-
     Class Person --> {Name, Address, numC, Hours} --> Parent
 
-    from Person import Person
-    Class Student(Person) --> {Grades[], getGrades()} --> Child
-    Class Teacher(Person) --> {payRate, getSalary()} --> Child
+    Class Student --> {Person, Grades[], getGrades()} --> Child
+    Class Teacher --> {Person, payRate, getSalary()} --> Child
 
     --> Student/Teacher is a Person --> Child is a part of Parent
 """
