@@ -120,5 +120,6 @@ print(m.upper())  #* The output is HOPE
 print("hope"+1) #! Error!! 
 #* You can sum (string to string) OR (int to int)
 
+#* SEE { https://github.com/HopeMashal/Python/blob/master/Notes/Student.py }
 
 """ _______________________________ """
