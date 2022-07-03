@@ -69,7 +69,13 @@
     Class Student --> {Name, Address, numC, Hours, Grades[], getGrades()}
     Class Teacher --> {Name, Address, numC, Hours, payRate, getSalary()}
     ==> DRY : Don't Repeat Yourself
+
+    ==> Solution:-
+    Class Person --> {Name, Address, numC, Hours}
     
+    from Person import Person
+    Class Student(Person) --> {Grades[], getGrades()}
+    Class Teacher(Person) --> {payRate, getSalary()}
 """
 
 
