@@ -128,4 +128,6 @@ print("hope"+1) #! Error!!
 
 #* SEE { https://github.com/HopeMashal/Python/blob/master/Notes/Static_Method.py } --> Static Method
 
+#* SEE { https://github.com/HopeMashal/Python/blob/master/Notes/Inheritance_&_Polymorphism.py } --> Inheritance & Polymorphism
+
 """ _______________________________ """
