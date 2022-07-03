@@ -29,7 +29,7 @@ class Pizza:
 
   @classmethod
   def margherita(cls):
-    return cls(['Mozarella','Sauce'])
+    return cls(['Mozzarella','Sauce'])
 
   def __str__(self):
     return f"Pizza ingredients are {self.__ingredients}"
