@@ -126,4 +126,6 @@ print("hope"+1) #! Error!!
 
 #* SEE { https://github.com/HopeMashal/Python/blob/master/Notes/Class_Method.py } --> Class Method
 
+#* SEE { https://github.com/HopeMashal/Python/blob/master/Notes/Static_Method.py } --> Static Method
+
 """ _______________________________ """
