@@ -124,4 +124,6 @@ print("hope"+1) #! Error!!
 
 #* SEE { https://github.com/HopeMashal/Python/blob/master/Notes/Students.py } --> With SETTER & GETTER FUNCTIONS
 
+#* SEE { https://github.com/HopeMashal/Python/blob/master/Notes/Class_Method.py } --> Class Method
+
 """ _______________________________ """
