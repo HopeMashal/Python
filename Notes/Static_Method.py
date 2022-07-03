@@ -40,3 +40,25 @@ pizza_1 = Pizza(6,['Mozzarella','Tomatoes'])
 print(pizza_1.area()) #* The output is 113.04
 print(Pizza.circle_area(4)) #* The output is 50.24 
   
+
+class Dates:
+
+  def __init__(self,date):
+    self.__date = date
+
+  def getDate(self):
+    return self.__date
+
+  @staticmethod
+  def toDashDate(date):
+    return date.replace("/","-")
+
+date = Dates("15-12-2016")
+dateFromDB = "15/12/2016"
+dateWithDash = Dates.toDashDate(dateFromDB)
+
+if(date.getDate()==dateWithDash):
+  print("Equal")
+else:
+  print("Unequal")
+#* The output is Equal
