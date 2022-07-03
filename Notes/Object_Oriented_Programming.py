@@ -93,8 +93,8 @@
     ==> Solution:-
     Class Person --> {Name, Address, numC, Hours} --> Parent
 
-    Class Student --> {Person, Grades[], getGrades()} --> Child
-    Class Teacher --> {Person, payRate, getSalary()} --> Child
+    Class Student(Person) --> {Grades[], getGrades()} --> Child
+    Class Teacher(Person) --> {payRate, getSalary()} --> Child
 
     --> Student/Teacher is a Person --> Child is a part of Parent
 """
