@@ -71,12 +71,13 @@
     ==> DRY : Don't Repeat Yourself
 
     ==> Solution:-
-    Class Person --> {Name, Address, numC, Hours}
-    
-    from Person import Person
-    Class Student(Person) --> {Grades[], getGrades()}
-    Class Teacher(Person) --> {payRate, getSalary()}
-"""
+    Class Person --> {Name, Address, numC, Hours} --> Parent
 
+    from Person import Person
+    Class Student(Person) --> {Grades[], getGrades()} --> Child
+    Class Teacher(Person) --> {payRate, getSalary()} --> Child
+
+    --> Student/Teacher is a Person --> Child is a part of Parent
+"""
 
 """ _______________________________ """
