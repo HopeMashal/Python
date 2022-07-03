@@ -22,7 +22,7 @@ class Student:
     self.__age = new_age
 
   def describe(self):
-    print(f"My name is {self.__name}. I'm {self.__age} years old.") 
+    print(f"My name is {self.__name}. I'm {self.__age} years old. My courses are {self.__courses}") 
     #* OR print("My name is {}. I'm {} years old.".format(self.name, self.age)) 
 
   def is_old(self, num):
@@ -41,7 +41,9 @@ print(student_1.get_name()) #* The output is Amal
 
 student_1.set_name("Hope Mashal")
 student_1.set_age(25)
-student_1.describe() #* The output is My name is Hope Mashal. I'm 25 years old.
+student_1.describe() #* The output is My name is Hope Mashal. I'm 25 years old. My courses are none
+
+print(student_1.__name) #* The output is {AttributeError: 'Student' object has no attribute '__name'} --> Because this value is private
 
 
 """ _______________________________ """
