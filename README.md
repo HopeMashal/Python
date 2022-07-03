@@ -29,6 +29,7 @@ Python Basic Notes and Some Apps
     * Class Method [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Class_Method.py)
     * Static Method [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Static_Method.py)
     * Inheritance & Polymorphism [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Inheritance_&_Polymorphism.py)
+    *  Abstraction [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Abstraction.py)
 
 ## Apps
   * Calculator 

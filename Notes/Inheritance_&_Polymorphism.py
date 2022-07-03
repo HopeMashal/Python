@@ -51,3 +51,7 @@ print(woman_1.no_of_women) #* The output is 1
 woman = Woman.initFromBirthYear('Yuyu',1996,"Curly")
 print(woman.display()) #* The output is Name is Yuyu and age is 26 and hair is Curly and gender is Female
 print(woman_1.no_of_women) #* The output is 2
+
+print(isinstance(woman, Woman)) #* The output is True
+print(isinstance(woman, Man)) #* The output is False
+print(isinstance(woman, Person)) #* The output is True
