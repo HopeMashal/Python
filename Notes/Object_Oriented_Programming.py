@@ -63,6 +63,14 @@
 """ _______________________________ """
 
 #! 4- Inheritance
+#* (CLASSES) الوراثة: الابن يرث بعض الصفات من الاب مثل المثال يلي كان موجود في ملف
+"""
+  Example:
+    Class Student --> {Name, Address, numC, Hours, Grades[], getGrades()}
+    Class Teacher --> {Name, Address, numC, Hours, payRate, getSalary()}
+    ==> DRY : Don't Repeat Yourself
+    
+"""
 
 
 """ _______________________________ """
