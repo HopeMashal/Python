@@ -23,6 +23,9 @@ Python Basic Notes and Some Apps
   * Modules [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Modules.py)
   * Classes [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Classes.py)
   * Object Oriented Programming [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Object_Oriented_Programming.py)
+    * Without SETTER & GETTER FUNCTIONS [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Student.py)
+    * With SETTER & GETTER FUNCTIONS [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Students.py)
+    * Class Method [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Class_Method.py)
 
 ## Apps
   * Calculator 
