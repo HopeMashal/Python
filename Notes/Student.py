@@ -6,6 +6,12 @@ class Student:
     self.courses = courses
     Student.no_of_students += 1
 
+  def describe(self):
+    print(f"My name is {self.name}. I'm {self.age} years old.") 
+    #* OR print("My name is {}. I'm {} years old.".format(self.name, self.age)) 
+
+  
+
 student_1 = Student("Hope", 24, ['css','math'])
 student_2 = Student("Hope", 24, ['css','math'])
 print(student_1,student_2) #* The output is <__main__.Student object at 0x000001E2A5DD6D60> <__main__.Student object at 0x000001E2A5DD6CA0> ==> its place in memory
@@ -21,3 +27,8 @@ print(student_4.age , student_4.name , student_4.courses )  #* The output is 24 
 student_4.name="Amal"
 student_4.age=30
 print(student_4.age , student_4.name , student_4.courses )  #* The output is 30 Amal ['math']
+
+print(Student.no_of_students) #* The output is 4
+print(student_3.no_of_students) #* The output is 4
+
+student_2.describe() #* The output is My name is Hope. I'm 24 years old. 
