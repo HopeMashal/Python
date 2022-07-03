@@ -1,3 +1,6 @@
+""" _______________________________ """
+#! WITHOUT SETTER & GETTER FUNCTIONS
+
 class Student:
   no_of_students = 0
   def __init__(self,name,age=0,courses='none'):
@@ -10,7 +13,11 @@ class Student:
     print(f"My name is {self.name}. I'm {self.age} years old.") 
     #* OR print("My name is {}. I'm {} years old.".format(self.name, self.age)) 
 
-  
+  def is_old(self, num):
+    if self.age >= num:
+      print("Student is old")
+    else:
+      print("Student is not old")
 
 student_1 = Student("Hope", 24, ['css','math'])
 student_2 = Student("Hope", 24, ['css','math'])
@@ -32,3 +39,8 @@ print(Student.no_of_students) #* The output is 4
 print(student_3.no_of_students) #* The output is 4
 
 student_2.describe() #* The output is My name is Hope. I'm 24 years old. 
+
+student_1.is_old(50)  #* The output is Student is not old
+student_4.is_old(20)  #* The output is Student is old
+
+""" _______________________________ """
