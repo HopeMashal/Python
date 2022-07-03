@@ -100,3 +100,25 @@
 """
 
 """ _______________________________ """
+
+#! Practical:
+x = 1
+print(type(x)) #* The output is <class 'int'>
+y = "Hope"
+print(type(y)) #* The output is <class 'str'>
+z = True
+print(type(z)) #* The output is <class 'bool'>
+o = (1,2,3)
+print(type(o)) #* The output is <class 'tuple'>
+l = {'name':"Hope"}
+print(type(l)) #* The output is <class 'dict'>
+
+m = "Hope"
+print(m.upper())  #* The output is HOPE
+#* upper() is a method in class 'str'
+
+print("hope"+1) #! Error!! 
+#* You can sum (string to string) OR (int to int)
+
+
+""" _______________________________ """
