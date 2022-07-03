@@ -132,6 +132,6 @@ print("hope"+1) #! Error!!
 
 #* SEE { https://github.com/HopeMashal/Python/blob/master/Notes/Abstraction.py } -->  Abstraction
 
-#* SEE { https://github.com/HopeMashal/Python/blob/master/Notes/Dunder_Functions.py } -->  Dunder Functions
+#* SEE { https://github.com/HopeMashal/Python/blob/master/Notes/Dunder_Methods.py } -->  Dunder Methods
 
 """ _______________________________ """
