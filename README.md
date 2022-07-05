@@ -31,6 +31,7 @@ Python Basic Notes and Some Apps
     * Inheritance & Polymorphism [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Inheritance_&_Polymorphism.py)
     *  Abstraction [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Abstraction.py)
     * Dunder Methods [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Dunder_Methods.py)
+  * Python Special/Dunder Methods [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Puthon_Special.py)
 
 ## Apps
   * Calculator 
