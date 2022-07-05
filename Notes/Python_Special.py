@@ -12,3 +12,13 @@ print("Hope"*3) #* The output is HopeHopeHope
 print("--------")
 
 """ _______________________________ """
+
+a="Hope Mashal"
+b=['Hope','Amal']
+
+print(len(a)) #* The output is 11
+print(b[1]) #* The output is Amal
+print(a.__len__()) #* The output is 11
+print(b.__getitem__(1)) #* The output is Amal
+
+""" _______________________________ """
