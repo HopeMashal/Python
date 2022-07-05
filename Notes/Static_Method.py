@@ -1,3 +1,6 @@
+""" _______________________________ """
+#!""" Static Method """
+
 class Math:
   @staticmethod
   def add(x,y):
@@ -62,3 +65,5 @@ if(date.getDate()==dateWithDash):
 else:
   print("Unequal")
 #* The output is Equal
+
+""" _______________________________ """

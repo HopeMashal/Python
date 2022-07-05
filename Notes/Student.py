@@ -1,5 +1,5 @@
 """ _______________________________ """
-#! WITHOUT SETTER & GETTER FUNCTIONS
+#!""" Instance Method/WITHOUT SETTER & GETTER FUNCTIONS """
 
 class Student:
   no_of_students = 0
