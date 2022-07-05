@@ -1,3 +1,6 @@
+""" _______________________________ """
+#!""" Class Example (Child) """
+
 from Doctor import Doctor
 
 class FamilyDoctor(Doctor):
@@ -6,3 +9,5 @@ class FamilyDoctor(Doctor):
 
   def paid_by_who(self):
     print("I get paid by the people")
+
+""" _______________________________ """

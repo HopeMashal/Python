@@ -1,3 +1,6 @@
+""" _______________________________ """
+#!""" Class Example (Parent)"""
+
 class Doctor:
   def studied_years(self):
     print("I studied for 7 years")
@@ -7,3 +10,5 @@ class Doctor:
 
   def paid_by_who(self):
     print("I get paid by the government")
+
+""" _______________________________ """

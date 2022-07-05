@@ -1,3 +1,6 @@
+""" _______________________________ """
+#!""" Inheritance & Polymorphism """
+
 from datetime import date
 
 class Person:
@@ -55,3 +58,5 @@ print(woman_1.no_of_women) #* The output is 2
 print(isinstance(woman, Woman)) #* The output is True
 print(isinstance(woman, Man)) #* The output is False
 print(isinstance(woman, Person)) #* The output is True
+
+""" _______________________________ """
