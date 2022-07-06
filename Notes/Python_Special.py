@@ -36,7 +36,17 @@ class Order:
   def __len__(self):
     return len(self.__cart)
 
+  def __call__(self):
+    print(f"{self.__customer}")
+
 order = Order(["laptop","monitor"], "Hope Mashal")
 print(len(order)) #* The output is 2
+order() #* The output is Hope Mashal
+print(order)
+
+""" _______________________________ """
+
+
+
 
 """ _______________________________ """
