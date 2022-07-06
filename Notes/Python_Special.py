@@ -1,6 +1,9 @@
 """ _______________________________ """
 #!""" Python Special/Dunder Methods """
 
+from ast import For
+
+
 print("--------")
 print(1+1) #* The output is 2
 print("--------")
@@ -87,5 +90,24 @@ if order_1: #? It's like order_1.orderMsg()
   print(f"Your order is processing!!")
 else:
   print(f"Shopping cart is empty!!!")
+
+""" _______________________________ """
+
+""" 
+
+  For multiplication : 
+    __mul__(self) => m = m * n
+    __imul__(self) => m *= n
+
+  For Division :
+    __div__(self) => m = m / n
+    __idiv__(self) => m /= n
+
+  For Subtraction :
+    __sub__(self) => m = m - n
+    __isub__(self) => m -= n
+
+"""
+
 
 """ _______________________________ """
