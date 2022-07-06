@@ -123,5 +123,14 @@ print(my_merged_list_1) #* The output is [[1, 2, 3], [4, 5, 6]]
 print(*my_merged_list_1) #* The output is [1, 2, 3] [4, 5, 6]
 
 my_first_dict = {"A":1,"B":2}
+my_second_dict = {"C":3,"D":4}
+my_merged_dict = {**my_first_dict, **my_second_dict}
+print(my_merged_dict) #* The output is {'A': 1, 'B': 2, 'C': 3, 'D': 4}
+
+list_of_char=[*"hope","mashal"]
+print(list_of_char) #* The output is ['h', 'o', 'p', 'e', 'mashal']
+
+list_of_char1=[*"hope",*"mashal"]
+print(list_of_char1) #* The output is ['h', 'o', 'p', 'e', 'm', 'a', 's', 'h', 'a', 'l'] 
 
 """ _______________________________ """
