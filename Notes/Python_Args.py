@@ -17,7 +17,7 @@ list_of_nums = [1,2,3,4,5]
 print(sum_list(list_of_nums)) #* The output is 15
 
 #! Using Python Args
-def Sum_Nums(*args):
+def Sum_Nums(*args): #? *args -> unpacking
   result = 0
   for x in args:
     result += x
