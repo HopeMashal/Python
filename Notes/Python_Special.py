@@ -39,10 +39,17 @@ class Order:
   def __call__(self):
     print(f"{self.__customer}")
 
+  def __str__(self):
+    return f"{self.__customer} bought {self.__cart}"
+
+  def __repr__(self):
+    return f"Order(list of items, customer name)"
+
 order = Order(["laptop","monitor"], "Hope Mashal")
 print(len(order)) #* The output is 2
 order() #* The output is Hope Mashal
-print(order)
+print(order) #* The output is Hope Mashal bought ['laptop', 'monitor'] --> If we don't have __str__ method, the output will be Order(list of items, customer name)
+print(repr(order)) #* The output is Order(list of items, customer name)
 
 """ _______________________________ """
 
