@@ -71,6 +71,9 @@ class Order:
     new_cart.insert(0,other)
     return Order(new_cart, self.__customer)
 
+  def __getitem__(self,key):
+    return self.__cart[key]
+
 order = Order(["laptop","monitor"], "Hope Mashal")
 print(len(order)) #* The output is 2
 order() #* The output is Hope Mashal
@@ -122,5 +125,7 @@ else:
 
 """
 
+print(order_1[0]) #* The output is Monitor
+print(order_1[2]) #* The output is USB stick
 
 """ _______________________________ """
