@@ -45,15 +45,24 @@ class Order:
   def __repr__(self):
     return f"Order(list of items, customer name)"
 
+  def __bool__(self):
+    return len(self.__cart)>0
+
+  def orderMsg(self):
+    if self.__cart:
+      print(f"{self.__customer} order is processing!!")
+    else:
+      print(f"Shopping cart is empty!!!")
+
 order = Order(["laptop","monitor"], "Hope Mashal")
 print(len(order)) #* The output is 2
 order() #* The output is Hope Mashal
 print(order) #* The output is Hope Mashal bought ['laptop', 'monitor'] --> If we don't have __str__ method, the output will be Order(list of items, customer name)
 print(repr(order)) #* The output is Order(list of items, customer name)
+print(bool(order)) #* The output is True (len(order.cart)2>0)
+order.orderMsg() #* The output is Hope Mashal order is processing!!
 
-""" _______________________________ """
-
-
-
+order_1=Order([],"Yuki")
+order_1.orderMsg() #* The output is Shopping cart is empty!!!
 
 """ _______________________________ """
