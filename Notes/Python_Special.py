@@ -54,15 +54,38 @@ class Order:
     else:
       print(f"Shopping cart is empty!!!")
 
+  def __add__(self,other):
+    new_cart = self.__cart.copy()
+    new_cart.append(other)
+    return Order(new_cart, self.__customer)
+
+  def __iadd__(self,other):
+    self.__cart.append(other)
+    return self
+
 order = Order(["laptop","monitor"], "Hope Mashal")
 print(len(order)) #* The output is 2
 order() #* The output is Hope Mashal
 print(order) #* The output is Hope Mashal bought ['laptop', 'monitor'] --> If we don't have __str__ method, the output will be Order(list of items, customer name)
 print(repr(order)) #* The output is Order(list of items, customer name)
-print(bool(order)) #* The output is True (len(order.cart)2>0)
+print(bool(order)) #* The output is True --> (len(order.cart)2>0)
 order.orderMsg() #* The output is Hope Mashal order is processing!!
 
 order_1=Order([],"Yuki")
 order_1.orderMsg() #* The output is Shopping cart is empty!!!
+
+order_1 + "Mouse"+"USB stick"
+print(order_1) #* The output is Yuki bought [] --> Because the cart didn't change, you need to save the change in order_1
+
+order_1=order_1 + "Mouse"+"USB stick"
+print(order_1) #* The output is Yuki bought ['Mouse', 'USB stick']
+
+order_1 += "Keyboard"
+print(order_1) #* The output is Yuki bought ['Mouse', 'USB stick', 'Keyboard']]
+
+if order_1: #? It's like order_1.orderMsg()
+  print(f"Your order is processing!!")
+else:
+  print(f"Shopping cart is empty!!!")
 
 """ _______________________________ """
