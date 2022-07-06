@@ -40,6 +40,14 @@ print(my_sum(1,2)) #* The output is 3
 print(my_sum(1,2,3,4,5)) #* The output is 15
 print(my_sum(1,2,3,4,5, option=False)) #* The output is 0
 
+def make_sentence(**kwargs):
+  result=""
+  for x in kwargs.values():
+    result += x+" "
+  return result 
+
+print(make_sentence(a='Hope',b='is',c='so',d='cute',e='!!!')) #* The output is Hope is so cute !!! 
+
 #! Using Python Unpacking
 
 
