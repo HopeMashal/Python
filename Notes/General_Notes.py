@@ -37,3 +37,23 @@ print(" /    |")
 print("/_____|")
 
 """ _______________________________ """
+
+#!""" To convert python file to exe file """
+#* First Method
+#? Open the folder
+#? Click shift with right click
+#? Click --> Open PowerShell window here
+#? Run --> pip install pyinstaller
+#? Run --> pyinstaller --onefile 'file_name.py'
+
+#* Second Method
+#? Open the folder
+#? Click shift with right click
+#? Click --> Open PowerShell window here
+#? Run --> pip install auto-py-to-exe
+#? Run --> auto-py-to-exe
+#? Browse the file
+#? Select --> one file
+#? Click --> Convert .py to .exe
+
+""" _______________________________ """
