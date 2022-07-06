@@ -25,4 +25,22 @@ def Sum_Nums(*args): #? *args -> unpacking
 
 print(Sum_Nums(1,2,3,4,5,6)) #* The output is 21
 
+
+#! Using Python Kwargs -> Keyword Arguments
+def my_sum(a,b,*args,option=True):
+  result = 0
+  if option:
+    for x in args:
+      result += x
+    return a+b+result
+  else: 
+    return result
+
+print(my_sum(1,2)) #* The output is 3
+print(my_sum(1,2,3,4,5)) #* The output is 15
+print(my_sum(1,2,3,4,5, option=False)) #* The output is 0
+
+#! Using Python Unpacking
+
+
 """ _______________________________ """
