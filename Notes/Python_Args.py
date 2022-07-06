@@ -42,11 +42,22 @@ print(my_sum(1,2,3,4,5, option=False)) #* The output is 0
 
 def make_sentence(**kwargs):
   result=""
-  for x in kwargs.values():
+  for x in kwargs.values(): #? If I type kwargs => send key like (abcde) for our example
     result += x+" "
   return result 
 
 print(make_sentence(a='Hope',b='is',c='so',d='cute',e='!!!')) #* The output is Hope is so cute !!! 
+
+def human_details(**kwargs):
+  for key,value in kwargs.items():
+    print(f"{key}:{value}")
+
+human_details(name="Hope",job="Engineer",age="25") #* The output is 
+""" 
+    name:Hope
+    job:Engineer
+    age:25 
+"""
 
 #! Using Python Unpacking
 
