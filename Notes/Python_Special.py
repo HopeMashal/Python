@@ -66,6 +66,11 @@ class Order:
     self.__cart.append(other)
     return self
 
+  def __radd__(self,other):
+    new_cart = self.__cart.copy()
+    new_cart.insert(0,other)
+    return Order(new_cart, self.__customer)
+
 order = Order(["laptop","monitor"], "Hope Mashal")
 print(len(order)) #* The output is 2
 order() #* The output is Hope Mashal
@@ -84,7 +89,10 @@ order_1=order_1 + "Mouse"+"USB stick"
 print(order_1) #* The output is Yuki bought ['Mouse', 'USB stick']
 
 order_1 += "Keyboard"
-print(order_1) #* The output is Yuki bought ['Mouse', 'USB stick', 'Keyboard']]
+print(order_1) #* The output is Yuki bought ['Mouse', 'USB stick', 'Keyboard']
+
+order_1 = "Monitor" + order_1
+print(order_1) #* The output is Yuki bought ['Monitor', 'Mouse', 'USB stick', 'Keyboard']
 
 if order_1: #? It's like order_1.orderMsg()
   print(f"Your order is processing!!")
@@ -95,7 +103,12 @@ else:
 
 """ 
 
-  For multiplication : 
+  For Addition :
+    __add__(self) => m = m + n
+    __radd__(self) => m = n + m
+    __iadd__(self) => m += n
+
+  For Multiplication : 
     __mul__(self) => m = m * n
     __imul__(self) => m *= n
 
