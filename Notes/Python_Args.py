@@ -79,5 +79,49 @@ print_args(1,2,"3 is args","4 is args",name="Hope") #* The output is
 
 #! Using Python Unpacking
 
+my_list=[1,2,3]
+print(my_list) #* The output is [1, 2, 3]
+print(*my_list) #* The output is 1 2 3  ==> Unpacking
+print(1,2,3) #* The output is 1 2 3 
+
+def My_Sum(x,y,z):
+  print(x+y+z)
+
+My_List=[1,2,3]
+My_Sum(*My_List) #* The output is 6
+
+def MY_SUM(*args):
+  result = 0
+  for x in args:
+    result +=x
+  return result
+
+list1=[1,2,3]
+list2=[4,5,6]
+list3=[7,8,9]
+print(MY_SUM(*list1,*list2,*list3)) #* The output is 45
+print(MY_SUM(1,2,3,4,5,6,7,8,9)) #* The output is 45
+
+my_List=[1,2,3,4,5,6]
+a , *b , c =my_List
+print(a) #* The output is 1
+print(b) #* The output is [2, 3, 4, 5]
+print(c) #* The output is 6
+
+my_List1=(1,2,3,4,5,6)
+a , *b , c =my_List1
+print(a) #* The output is 1
+print(b) #* The output is [2, 3, 4, 5]
+print(c) #* The output is 6
+
+my_first_list=[1,2,3]
+my_second_list=[4,5,6]
+my_merged_list=[*my_first_list,*my_second_list]
+my_merged_list_1=[my_first_list,my_second_list]
+print(my_merged_list) #* The output is [1, 2, 3, 4, 5, 6]
+print(my_merged_list_1) #* The output is [[1, 2, 3], [4, 5, 6]]
+print(*my_merged_list_1) #* The output is [1, 2, 3] [4, 5, 6]
+
+my_first_dict = {"A":1,"B":2}
 
 """ _______________________________ """
