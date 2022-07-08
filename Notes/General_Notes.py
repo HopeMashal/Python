@@ -57,3 +57,12 @@ print("/_____|")
 #? Click --> Convert .py to .exe
 
 """ _______________________________ """
+
+#! Online Book:
+#* Chapter 1: https://www.py4e.com/html3/01-intro
+#* Chapter 2: https://www.py4e.com/html3/02-variables
+#* Chapter 3: https://www.py4e.com/html3/03-conditional
+#* Chapter 4: https://www.py4e.com/html3/04-functions
+#* Chapter 5: https://www.py4e.com/html3/05-iterations
+
+""" _______________________________ """
