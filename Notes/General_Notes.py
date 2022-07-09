@@ -43,14 +43,14 @@ print("/_____|")
 #? Open the folder
 #? Click shift with right click
 #? Click --> Open PowerShell window here
-#? Run --> pip install pyinstaller
+#? Run --> pip install pyinstaller //  py -3.10 -m pip install pyinstaller
 #? Run --> pyinstaller --onefile 'file_name.py'
 
 #* Second Method
 #? Open the folder
 #? Click shift with right click
 #? Click --> Open PowerShell window here
-#? Run --> pip install auto-py-to-exe
+#? Run --> pip install auto-py-to-exe  // py -3.10 -m pip install auto-py-to-exe
 #? Run --> auto-py-to-exe
 #? Browse the file
 #? Select --> one file
