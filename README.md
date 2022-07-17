@@ -33,6 +33,7 @@ Python Basic Notes and Some Apps
     * Dunder Methods [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Dunder_Methods.py)
   * Python Special/Dunder Methods [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Python_Special.py)
   * Python Args & Kwargs & Unpacking Operators [GO](https://github.com/HopeMashal/Python/blob/master/Notes/Python_Args.py)
+  * Timer [GO](https://github.com/HopeMashal/Python/blob/master/Notes/timer.py)
 
 ## Apps
   * Calculator 
