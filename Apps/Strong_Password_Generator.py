@@ -48,7 +48,6 @@ for i in range(part_20):
 
 if characters_number%2 ==1:
   y = random.randint(1,4)
-  print(y)
   if y ==1: z=s1
   elif y ==2 : z=s2
   elif y ==3 : z=s3
