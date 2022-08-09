@@ -46,14 +46,18 @@ for i in range(part_20):
   password.append(s3[i])
   password.append(s4[i])
 
-if characters_number%2 ==1:
+if characters_number%2 ==1 and len(password)<characters_number:
   y = random.randint(1,4)
   if y ==1: z=s1
   elif y ==2 : z=s2
   elif y ==3 : z=s3
   elif y ==4 : z=s4
-  x = random.randint(0,len(z))
+  x = random.randint(0,(len(z)-1))
   password.append(z[x])
+
+if len(password) > characters_number:
+  index = random.randint(0,(len(password)-1))
+  password.pop(index)
 
 random.shuffle(password)
 
