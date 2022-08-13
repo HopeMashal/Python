@@ -45,12 +45,12 @@ def checkPassword(password):
       print("The password is valid!! Please add lower case and number and symbol")
 
     elif( hasUpper and hasLower and not hasNumber and hasSymbol):
-      print("The password is valid!! Please add number case and number")
+      print("The password is valid!! Please add number and number")
     elif( hasUpper and hasLower and not hasNumber and not hasSymbol):
-      print("The password is valid!! Please add number case and symbol")
+      print("The password is valid!! Please add number and symbol")
 
     elif( hasUpper and hasLower and hasNumber and not hasSymbol):
-      print("The password is valid!! Please add symbol case")
+      print("The password is valid!! Please add symbol")
   else:
     print("The password is invalid!! Password must be at least 8, and less than 20")
 
