@@ -47,3 +47,4 @@ Python Basic Notes and Some Apps
   * Bitcoin Telegram Bot [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Bitcoin_Telegram_Bot.py)
   * Web Scraping [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Web_Scraping.py)
   * Ping Pong Game [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Pong_Game.py)
+  * Check Password [GO](https://github.com/HopeMashal/Python/blob/master/Apps/Check_Password.py)
